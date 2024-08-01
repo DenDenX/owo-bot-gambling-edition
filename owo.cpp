@@ -1,7 +1,7 @@
-#include "src/rastgele_sayi.h"
-#include "src/text_edit.h"
-#include "src/sleep.h"
-#include "src/oyunlar.cpp"
+#include "rastgele_sayi.h"
+#include "text_edit.h"
+#include "sleep.h"
+#include "oyunlar.cpp"
 #include <iostream>
 #include <string>
 #include <fstream>
