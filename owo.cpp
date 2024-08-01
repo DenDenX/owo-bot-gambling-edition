@@ -203,7 +203,7 @@ int main(int argc, const char** argv) {
 
             string cmd = "";
             getline(cin, cmd);
-            if (cmd == "recep tayyip erdogan cok mukemmel"){
+            if (cmd == "test_add_money"){
                 PARA = 1'000'000;
                 RING = 5000;
                 para_guncelle(1'000'000, 5000);
@@ -211,14 +211,16 @@ int main(int argc, const char** argv) {
             komut_yurut(cmd);
         }
     }catch(exception &e){
-        cout << "Program hata verdi. Buyuk ihtimalle senden kaynakli. \nProgrami yanlis falan kapatmissindir. Ne bilim\n\
-Ben nolur nolmaz diye data dosyasini siliyorum. \n\
-Onayliyon mu? (e: Evet, Sil Gide h: Hayir, Karisma): ";
-        string onay = "e";
+        cout << "Program has crashed. Your data is going to deleted to solve this error. \n\
+Do you want to continue? (y: Yes, Delete It / n: No, Keep It): ";
+        string onay = "y";
         getline(cin, onay);
-        if (onay == "e")
+        if (onay == "y")
             fs::remove("data.txt");
-        cout << endl << "Bay bay..." << endl;
+        cout << endl << " Your data has been deleted. Please restart the program." << endl;
+        yaz.close();
+        oku.close();
+        exit(0);
     }
 
     return 0;
