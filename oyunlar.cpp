@@ -2,9 +2,13 @@
 
 using namespace std;
 
-/*0 -> Yazi
-1 -> Ture*/
+// New games will be added.
+
+/*0 -> Heads
+1 -> Tails*/
 bool coinflip(){
+    // This code does not support to select heads or tails.
+    // You can fix that.
     if (rrr(0, 1) == 1){
         return true;
     }
@@ -12,6 +16,8 @@ bool coinflip(){
 }
 
 bool blackjack(){
+    // This code is not serves an actual blackjack game.
+    // You can fix that.
     short kasa = rrr(1, 21);
     short kisi = rrr(1, 21);
 
