@@ -1,7 +1,8 @@
 #include <string>
 using namespace std;
 
-// NOT: String olusturmayi pointerlarla yap!
+// You can use string pointers instead of string
+
 
 /*  
 Komutlar
